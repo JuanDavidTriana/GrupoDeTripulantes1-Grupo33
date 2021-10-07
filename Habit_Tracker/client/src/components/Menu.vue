@@ -78,7 +78,7 @@ export default {
   .menu.left {
     width: 50%;
     .ui.image {
-      width: 100px;
+      width: 250px;
       background-color: #d5bfbf;
     }
   }
