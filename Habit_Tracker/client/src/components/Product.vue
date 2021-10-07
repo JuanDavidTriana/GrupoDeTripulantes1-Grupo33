@@ -18,7 +18,7 @@
 import { API_URL } from '../utils/constants';
 
 export default {
-  name: "Product",
+  name: 'Product',
   props: {
     product: Object,
   },
