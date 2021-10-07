@@ -12,6 +12,6 @@ export default {
 .ui.title {
   text-align: center;
   font-family: "Comfortaa", cursive;
-  background-color: #d5bfbf;
+  background-color: #8ca1a5;
 }
 </style>
