@@ -37,23 +37,21 @@
         </button>
       </form>
 
-      <router-link to="/login">
-        Iniciar sesión
-      </router-link>
+      <router-link to="/login"> Iniciar sesión </router-link>
     </div>
   </BasicLayouts>
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
-import { useRouter } from 'vue-router';
-import * as Yup from 'yup';
-import BasicLayouts from '../layouts/BasicLayouts.vue';
-import { registerApi } from '../api/user';
-import { getTokenApi, setTokenApi } from '../api/token';
+import { ref, onMounted } from "vue";
+import { useRouter } from "vue-router";
+import * as Yup from "yup";
+import BasicLayouts from "../layouts/BasicLayouts.vue";
+import { registerApi } from "../api/user";
+import { getTokenApi, setTokenApi } from "../api/token";
 
 export default {
-  name: 'Register',
+  name: "Register",
   components: {
     BasicLayouts,
   },
@@ -65,14 +63,12 @@ export default {
     const token = getTokenApi();
 
     onMounted(() => {
-      if (token) router.push('/');
+      if (token) router.push("/");
     });
 
     const schemaForm = Yup.object().shape({
       username: Yup.string().required(true),
-      email: Yup.string()
-        .email(true)
-        .required(true),
+      email: Yup.string().email(true).required(true),
       password: Yup.string().required(true),
     });
 
@@ -84,7 +80,7 @@ export default {
         await schemaForm.validate(formData.value, { abortEarly: false });
         try {
           const response = await registerApi(formData.value);
-          router.push('/login');
+          router.push("/login");
         } catch (error) {
           console.log(error);
         }
@@ -107,6 +103,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+* {
+  font-family: "Comfortaa", cursive;
+}
 .register {
   text-align: center;
   h2 {
