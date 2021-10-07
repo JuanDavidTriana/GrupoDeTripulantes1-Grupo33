@@ -2,7 +2,7 @@
   <div>
     <h1>De nuestros visitantes</h1>    
     <div class="ui grid">
-      <div class="three wide column">
+      <div class="three wide column">        
         <div class="ui comments">
           <div class="comment">
             <a class="avatar">
@@ -18,7 +18,7 @@
                 </div>
               </div>
               <div class="text">Hola, esto es muy bueno. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sit officia possimus accusamus, qui quas soluta architecto iure, modi consequatur nesciunt, expedita exercitationem odio perferendis voluptatibus? Non tenetur aliquam voluptas. </div>
-            </div>
+            </div>           
           </div>
         </div>
       </div>
@@ -84,13 +84,14 @@ export default {
       .ui.comments{
         text-align: left;
         background-color: rgba(105, 99, 184, 0.25);
-        width:175%;
+        width:150%;
+        
         .avatar{
           width:60px;
           height:60px;
         }               
         .content{
-          font-size: 20px;
+          font-size: 15px;
         }
       }
     }    
