@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="ui segment">
     <h1>Productos</h1>
   </div>
 </template>
@@ -13,5 +13,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+* {
+  font-family: "Comfortaa", cursive;
+}
 </style>
