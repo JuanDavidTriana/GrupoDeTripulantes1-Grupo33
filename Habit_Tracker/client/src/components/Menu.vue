@@ -6,7 +6,7 @@
           <img
             class="ui small image"
             src="../assets/logo.png"
-            alt="Ecommerce"
+            alt="Habit Tracker Logo"
           />
         </router-link>
         <template v-for="category in categories" :key="category.id">
@@ -17,7 +17,7 @@
       </div>
       <div class="right menu">
         <router-link class="item" to="/login" v-if="!token">
-          Iniciar Sesion
+          Iniciar Sesión
         </router-link>
         <router-link class="item" to="/contacto"> Contáctanos </router-link>
 
@@ -68,17 +68,18 @@ export default {
 
 <style lang="scss" scoped>
 .ui.menu.secondary {
-  background-color: #316b83;
+  font-family: "Comfortaa", cursive;
+  background-color: #d5bfbf;
   .item {
-    color: #ffffff;
     &:hover {
-      color: #d5bfbf;
+      color: #316b83;
     }
   }
   .menu.left {
     width: 50%;
     .ui.image {
-      width: 50px;
+      width: 100px;
+      background-color: #d5bfbf;
     }
   }
   .menu.right {

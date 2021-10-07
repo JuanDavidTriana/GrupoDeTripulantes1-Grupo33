@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 <div class="ui card product">
     <div class="image">
         <img :src="API_URL+product.image.url" :alt="product.name" />        
@@ -11,6 +12,11 @@
         Comprar
     </div>
 </div>
+=======
+  <div class="ui segment">
+    <h1>Productos</h1>
+  </div>
+>>>>>>> c658ae65219a6d74e0456cb5b6f64bd33052eaf3
 </template>
 
 <script>
@@ -21,16 +27,20 @@ export default {
   props: {
     product: Object,
   },
+<<<<<<< HEAD
   setup(props){
     console.log(props.product);
     return{
         API_URL,
     };
   },  
+=======
+>>>>>>> c658ae65219a6d74e0456cb5b6f64bd33052eaf3
 };
 </script>
 
 <style lang="scss" scoped>
+<<<<<<< HEAD
 .product{
     &:hover{
         .ui.button{
@@ -47,5 +57,9 @@ export default {
         justify-content: center;
         transition:min-height 0.6s ease;
     }
+=======
+* {
+  font-family: "Comfortaa", cursive;
+>>>>>>> c658ae65219a6d74e0456cb5b6f64bd33052eaf3
 }
 </style>
