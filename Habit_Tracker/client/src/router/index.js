@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import Contacto from '../views/Contacto.vue'
+import Category from '../views/Category.vue'
 
 const routes = [{
         path: '/',
@@ -23,6 +24,10 @@ const routes = [{
         path: '/Contacto',
         name: 'Contacto',
         component: Contacto
+    },
+    {
+        path: '/:Category',
+        component: Category
     }
 
 ]

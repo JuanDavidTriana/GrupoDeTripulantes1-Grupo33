@@ -6,3 +6,6 @@ export function setTokenApi(token){
 export function getTokenApi(){
     return localStorage.getItem(TOKEN);
 }
+export function deleteTokenApi(){
+    return localStorage.removeItem(TOKEN);
+}
