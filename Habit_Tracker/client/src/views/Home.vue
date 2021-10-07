@@ -13,6 +13,8 @@
 import BasicLayouts from "../layouts/BasicLayouts.vue";
 import Testimonios from "../components/Testimonios.vue";
 import Cards from '../components/Cards.vue';
+import {ref, onMounted} from 'vue';
+import {getProducts} from '../api/products';
 
 export default {
   name: "Home",
@@ -21,5 +23,16 @@ export default {
     Testimonios,
     Cards,
   },
+
+  setup(){
+    let products = ref(null);
+    onMounted(async ()=>{
+      const response=await getProducts(30);
+      products.value=response;
+    });
+    return{
+      products,
+    }
+  }
 };
 </script>
