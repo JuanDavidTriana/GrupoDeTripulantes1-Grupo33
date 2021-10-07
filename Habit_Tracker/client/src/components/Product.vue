@@ -12,9 +12,6 @@
         Comprar
     </div>
   </div>
-  <div class="ui segment">
-    <h1>Productos</h1>
-  </div>
 </template>
 
 <script>
