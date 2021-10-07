@@ -3,6 +3,16 @@
     <Cards />
     <br />
     <br />
+    <div class="ui container">
+      <datepicker
+        lang="Greg"
+        type="range"
+        colorTheme="pink"
+        v-model="dateGreg"
+      />
+    </div>
+    <br />
+    <br />
     <Testimonios />
     <br />
     <br />
@@ -28,6 +38,7 @@ import Cards from "../components/Cards.vue";
 import { ref, onMounted } from "vue";
 import { getProducts } from "../api/products";
 import Product from "../components/Product.vue";
+import datepicker from "vue-awesome-datepicker";
 
 export default {
   name: "Home",
@@ -36,6 +47,7 @@ export default {
     Testimonios,
     Cards,
     Product,
+    datepicker,
   },
 
   setup() {
@@ -48,5 +60,21 @@ export default {
       products,
     };
   },
+
+  data() {
+    return {
+      date: {},
+      dateGreg: {},
+    };
+  },
 };
 </script>
+
+<style lang="scss" scoped>
+* {
+  font-family: "Comfortaa", cursive;
+}
+.ui.container {
+  position: relative;
+}
+</style>
