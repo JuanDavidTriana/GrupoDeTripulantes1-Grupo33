@@ -31,7 +31,7 @@
             <img src="../assets/calendario.jpg" />
           </div>
           <div class="content">
-            <h2 class="ui header">Como crear hábitos</h2>
+            <h2 class="ui header">¿Cómo crear hábitos?</h2>
             <br />
           </div>
           <button class="ui inverted violet button">Ver</button>
@@ -44,7 +44,7 @@
             <img src="../assets/meta.jpg" />
           </div>
           <div class="content">
-            <h2 class="ui header">Como establecer Metas</h2>
+            <h2 class="ui header">¿Cómo establecer Metas?</h2>
             <br />
           </div>
           <button class="ui inverted violet button">Ver</button>
