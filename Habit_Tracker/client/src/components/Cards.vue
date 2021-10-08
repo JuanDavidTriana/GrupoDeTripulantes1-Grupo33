@@ -20,7 +20,9 @@
             <h2 class="ui header">¿Por qué adquirir hábitos?</h2>
             <br />
           </div>
-          <button class="ui inverted violet button">Ver</button>
+          <router-link to="/Blog">
+            <button class="ui inverted violet button">Ver</button>
+          </router-link>
         </div>
       </div>
       <div class="ui card">
@@ -54,13 +56,13 @@
 
 <script>
 export default {
-  name: "Cards",
+  name: 'Cards',
 };
 </script>
 
 <style lang="scss" scoped>
 * {
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
 }
 .ui.segment {
   background-color: #95dac1;

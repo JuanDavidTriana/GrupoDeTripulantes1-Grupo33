@@ -32,16 +32,16 @@
 
 <script>
 // @ is an alias to /src
-import BasicLayouts from "../layouts/BasicLayouts.vue";
-import Testimonios from "../components/Testimonios.vue";
-import Cards from "../components/Cards.vue";
-import { ref, onMounted } from "vue";
-import { getProducts } from "../api/products";
-import Product from "../components/Product.vue";
-import datepicker from "vue-awesome-datepicker";
+import BasicLayouts from '../layouts/BasicLayouts.vue';
+import Testimonios from '../components/Testimonios.vue';
+import Cards from '../components/Cards.vue';
+import { ref, onMounted } from 'vue';
+import { getProducts } from '../api/products';
+import Product from '../components/Product.vue';
+import datepicker from 'vue-awesome-datepicker';
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     BasicLayouts,
     Testimonios,
@@ -72,9 +72,9 @@ export default {
 
 <style lang="scss" scoped>
 * {
-  font-family: "Comfortaa", cursive;
+  font-family: 'Comfortaa', cursive;
 }
 .ui.container {
-  position: relative;
+  position: center;
 }
 </style>
