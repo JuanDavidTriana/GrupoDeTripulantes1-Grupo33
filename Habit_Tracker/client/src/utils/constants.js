@@ -1,3 +1,3 @@
-export const API_URL = "http://localhost:1337"
-export const TOKEN = "token";
-export const PRODUCTS="products";
+export const API_URL = 'https://habit-tracker-col.herokuapp.com';
+export const TOKEN = 'token';
+export const PRODUCTS = 'products';
