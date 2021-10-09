@@ -15,6 +15,8 @@
           Cambiar de hábitos significa cambiar tu identidad. Transformarte en una versión mejor de ti mismo.
         </p>
 
+
+
         <div>
           <img
             src="../assets/habits.jpg"
