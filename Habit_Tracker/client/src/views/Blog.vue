@@ -29,7 +29,7 @@
           <p>Hazlo satisfactorio</p>
         </div>
         <div>
-          <img src="../assets/como.jpg" alt="pbro" />
+          <img src="../assets/como.jpg" alt="libro" />
         </div>
       </center>
     </div>
