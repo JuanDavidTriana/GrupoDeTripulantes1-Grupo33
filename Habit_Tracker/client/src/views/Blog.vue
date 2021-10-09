@@ -1,14 +1,18 @@
 <template>
   <BasicLayouts>
+    <div class= "ui segment">
     <div class="por que">
       <center>
-        <h2>Por qué adquirir hábitos</h2>
+        <h2 class="ui title">¿Por qué adquirir hábitos?</h2>
         <p>
           Los pequeños cambios incrementales son los precursores de grandes
-          transformaciones
+          transformaciones.
         </p>
         <p>
-          No necesitas grandes cambios para obtener grandes transformaciones
+          No necesitas grandes cambios para obtener grandes transformaciones.
+        </p>
+        <p>
+          Cambiar de hábitos significa cambiar tu identidad. Transformarte en una versión mejor de ti mismo.
         </p>
 
         <div>
@@ -19,24 +23,31 @@
         </div>
       </center>
     </div>
+    </div>
+    <div class= "ui segment">
     <div class="como">
       <center>
-        <h2>¿Cómo crear habitos?</h2>
+        <h2 class="ui title">¿Cómo crear hábitos?</h2>
         <div>
           <p>Hazlo obvio</p>
           <p>Hazlo atractivo</p>
           <p>Hazlo facil</p>
           <p>Hazlo satisfactorio</p>
         </div>
+        <br/>
         <div>
           <img src="../assets/como.jpg" alt="pbro" />
         </div>
       </center>
     </div>
+    </div> 
+     <div class= "ui segment">
     <div class="metas">
       <center>
-        <h2>¿Cómo crear metas?</h2>
+        <h2 class="ui title">¿Cómo crear metas?</h2>
         <img src="../assets/goal.jpg" alt="metas" />
+         <br/>
+         <br/>
         <p>
           La mayoría de las personas tiene objetivos. Ya sea personales o de
           negocios, pero todos nos estamos moviendo hacia una dirección
@@ -56,6 +67,7 @@
         <br />
       </center>
     </div>
+     </div> 
   </BasicLayouts>
 </template>
 
@@ -70,7 +82,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.psta {
-  text-apgn: center;
+.ui.title{
+  font-family: "Comfortaa", cursive;
+  color: #512d6d;
+}
+.ui.segment{
+  
 }
 </style>

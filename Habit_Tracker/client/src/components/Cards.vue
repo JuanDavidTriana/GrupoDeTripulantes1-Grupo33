@@ -1,89 +1,93 @@
 <template>
-  <div class="ui segment">
-    <h1 class="ui header">¿Qué es Habit Tracker?</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloremque
-      omnis libero? Sunt maxime iste, eos eveniet voluptatum voluptate aut
-      fugiat vitae eaque commodi veritatis corporis quod odio nam corrupti.
-    </p>
-  </div>
-  <br />
+	<div class="ui segment">
+		<h1 class="ui header">¿Qué es Habit Tracker?</h1>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloremque
+			omnis libero? Sunt maxime iste, eos eveniet voluptatum voluptate aut
+			fugiat vitae eaque commodi veritatis corporis quod odio nam corrupti.
+		</p>
+	</div>
+	<br />
 
-  <div class="ui grid">
-    <div class="ui three cards">
-      <div class="ui card">
-        <div class="content">
-          <div class="ui medium image">
-            <img src="../assets/Porque1.jpg" />
-          </div>
-          <div class="content">
-            <h2 class="ui header">¿Por qué adquirir hábitos?</h2>
-            <br />
-          </div>
-          <router-link to="/Blog">
-            <button class="ui inverted violet button">Ver</button>
-          </router-link>
-        </div>
-      </div>
-      <div class="ui card">
-        <div class="content">
-          <div class="ui medium image">
-            <img src="../assets/calendario.jpg" />
-          </div>
-          <div class="content">
-            <h2 class="ui header">¿Cómo crear hábitos?</h2>
-            <br />
-          </div>
-          <button class="ui inverted violet button">Ver</button>
-        </div>
-      </div>
+	<div class="ui grid">
+		<div class="ui three cards">
+			<div class="ui card">
+				<div class="content">
+					<div class="ui medium image">
+						<img src="../assets/Porque1.jpg" />
+					</div>
+					<div class="content">
+						<h2 class="ui header">¿Por qué adquirir hábitos?</h2>
+						<br />
+					</div>
+					<router-link to="/Blog">
+						<button class="ui inverted violet button">Ver</button>
+					</router-link>
+				</div>
+			</div>
+			<div class="ui card">
+				<div class="content">
+					<div class="ui medium image">
+						<img src="../assets/calendario.jpg" />
+					</div>
+					<div class="content">
+						<h2 class="ui header">¿Cómo crear hábitos?</h2>
+						<br />
+					</div>
+					<router-link to="/Blog">
+						<button class="ui inverted violet button">Ver</button>
+					</router-link>
+				</div>
+			</div>
 
-      <div class="ui card">
-        <div class="content">
-          <div class="ui medium image">
-            <img src="../assets/meta.jpg" />
-          </div>
-          <div class="content">
-            <h2 class="ui header">¿Cómo establecer Metas?</h2>
-            <br />
-          </div>
-          <button class="ui inverted violet button">Ver</button>
-        </div>
-      </div>
-    </div>
-  </div>
+			<div class="ui card">
+				<div class="content">
+					<div class="ui medium image">
+						<img src="../assets/meta.jpg" />
+					</div>
+					<div class="content">
+						<h2 class="ui header">¿Cómo establecer Metas?</h2>
+						<br />
+					</div>
+					<router-link to="/Blog">
+						<button class="ui inverted violet button">Ver</button>
+					</router-link>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
-export default {
-  name: 'Cards',
-};
+	export default {
+		name: "Cards",
+	};
 </script>
 
 <style lang="scss" scoped>
-* {
-  font-family: 'Comfortaa', cursive;
-}
-.ui.segment {
-  background-color: #95dac1;
-  .ui.header {
-    text-align: center;
-    color: #512d6d;
-  }
-}
+	* {
+		font-family: "Comfortaa", cursive;
+	}
+	.ui.segment {
+		background-color: #95dac1;
+		.ui.header {
+			text-align: center;
+			color: #512d6d;
+		}
+	}
 
-.ui.grid {
-  background-color: #d5bfbf;
+	.ui.grid {
+		background-color: #8ca1a5;
 
-  .ui.three.cards {
-    margin: 2%;
-  }
-}
+		.ui.three.cards {
+			margin: 2%;
+		}
+	}
 
-.ui.card {
-  text-align: center;
-  .ui.header {
-    color: #512d6d;
-  }
-}
+	.ui.card {
+		text-align: center;
+		.ui.header {
+			color: #512d6d;
+		}
+	}
 </style>
