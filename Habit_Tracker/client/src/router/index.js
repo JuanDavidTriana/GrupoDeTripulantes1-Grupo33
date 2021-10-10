@@ -5,6 +5,7 @@ import Register from '../views/Register.vue';
 import Contacto from '../views/Contacto.vue';
 import Category from '../views/Category.vue';
 import Blog from '../views/Blog.vue';
+import AboutUs from '../views/AboutUs.vue';
 
 const routes = [
   {
@@ -32,7 +33,11 @@ const routes = [
     name: 'Blog',
     component: Blog,
   },
-
+  {
+    path: '/AboutUs',
+    name: 'AboutUs',
+    component: AboutUs,
+  },
   {
     path: '/:Category',
     component: Category,

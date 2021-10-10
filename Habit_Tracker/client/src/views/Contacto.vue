@@ -2,7 +2,6 @@
   <BasicLayouts>
     <div>
       <div id="contacto" class="contacto">
-        <h2>Contacto</h2>
         <form class="formulario" action="#" method="POST">
           <legend>Contáctanos llenando todos los campos</legend>
           <div class="contenedor de campos">

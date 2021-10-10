@@ -20,7 +20,7 @@
           Iniciar Sesión
         </router-link>
         <router-link class="item" to="/contacto"> Contáctanos </router-link>
-
+        <router-link class="item" to="/aboutus"> Nosotros </router-link>
         <template v-if="token">
           <router-link class="item" to="/orders">Pedidos</router-link>
           <span class="ui item cart"><i class="shopping cart icon"></i></span>
