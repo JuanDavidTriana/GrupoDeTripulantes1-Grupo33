@@ -2,8 +2,8 @@
   <BasicLayouts>
     <div>
       <div id="contacto" class="contacto">
-        <form class="formulario" action="#" method="POST">
-          <legend>Contáctanos llenando todos los campos</legend>
+        <form class="ui form" action="#" method="POST">
+          <h1 class="ui title">Contáctanos llenando todos los campos</h1>
           <div class="contenedor de campos">
             <div class="campo">
               <label>Nombre</label>
@@ -22,7 +22,11 @@
               <textarea> </textarea>
             </div>
             <div class="enviar">
-              <input class="boton" type="submit" value="Enviar" />
+              <input
+                class="ui button fluid primary"
+                type="submit"
+                value="Enviar"
+              />
             </div>
           </div>
         </form>
@@ -45,17 +49,15 @@ export default {
 * {
   font-family: "Comfortaa", cursive;
 }
-.formulario {
+.ui.form {
   background-color: var(--gris);
   padding: 2rem;
   border-radius: 10px;
 }
-.formulario legend {
+.ui.title {
   text-align: center;
   font-size: 1.2rem;
-  color: var(--primario);
   margin-bottom: 2rem;
-  display: block;
   text-transform: uppercase;
   font-weight: 700;
 }
