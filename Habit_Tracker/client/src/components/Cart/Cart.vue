@@ -2,16 +2,24 @@
   <div class="cart-dimmer" :class="{open: showCart}" @click="closeCart" />
   <div class="cart" :class="{open: showCart}">
     <h2>Este es el carrito</h2>
-    <button @click="closeCart">Cerrar</button>
+    <div>
+      <CartHeader :closeCart="CartHeader" />
+    </div>
   </div>
 </template>
 
 <script>
 import {computed} from "vue";
 import {useStore} from "vuex";
+import CartHeader from "./CartHeader.vue";
 
 export default {
     name:'Cart',
+
+    components:{
+      CartHeader
+    },
+  
     setup(){
       const store=useStore();
       const showCart=computed(()=>store.state.showCart);
