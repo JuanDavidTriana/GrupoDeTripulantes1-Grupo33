@@ -4,6 +4,7 @@
       <h1 class="ui title">Acerca de nosotros</h1>
       <br />
       <h3>Geraldin Cordero</h3>
+      <p>Ingeniera Electromecánica</p>
       <p>Tripulantes MisiónTIC 2022 - UTP</p>
       <br />
       <h3>Juan Gómez</h3>
