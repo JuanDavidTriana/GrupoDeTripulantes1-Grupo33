@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>De nuestros visitantes</h1>    
+    <h1>De nuestros visitantes</h1> 
+    <br/>   
     <div class="ui grid">
       <div class="three wide column">        
         <div class="ui comments">
@@ -75,6 +76,9 @@ export default {
 <style lang="scss" scoped>
   *{
   font-family: 'Comfortaa', cursive;
+  }
+  h1{
+    color: #512d6d;
   }
   .ui.grid{
     

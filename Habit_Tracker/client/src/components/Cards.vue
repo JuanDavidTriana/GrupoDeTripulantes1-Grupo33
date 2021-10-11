@@ -2,9 +2,8 @@
   <div class="ui segment">
     <h1 class="ui header">¿Qué es Habit Tracker?</h1>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae doloremque
-      omnis libero? Sunt maxime iste, eos eveniet voluptatum voluptate aut
-      fugiat vitae eaque commodi veritatis corporis quod odio nam corrupti.
+      Es una aplicación que te ayudará de  forma simple a medir tus  hábitos a adquirir. 
+      Además puedes encontrar productos que te ayudaran a programarte en este proceso.
     </p>
   </div>
   <br />
@@ -72,7 +71,7 @@ export default {
   background-color: #95dac1;
   .ui.header {
     text-align: center;
-    color: #512d6d;
+    color: ;#512d6d
   }
 }
 
