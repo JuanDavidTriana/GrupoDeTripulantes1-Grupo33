@@ -42,11 +42,19 @@ export default {
   props: {
     products: Array,
     realoadCartFn: Function,
+
   },
   setup(props) {
+    const increaseProductsCart = (id) => {
+    addProductCartApi(id);
+    props.realoadCartFn();
+    };
+    
     
     return {
       API_URL,
+      increaseProductsCart,
+      
     };
   },
 };
