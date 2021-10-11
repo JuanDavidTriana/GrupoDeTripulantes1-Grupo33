@@ -71,7 +71,7 @@ export default {
   background-color: #95dac1;
   .ui.header {
     text-align: center;
-    color: ;#512d6d
+    color: #512d6d;
   }
 }
 
