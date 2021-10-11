@@ -56,7 +56,7 @@ export default {
       location.replace("/");
     };
 
-    const open=() => {
+    const openCart=() => {
       store.commit('steShowCart', true);
     };
 
