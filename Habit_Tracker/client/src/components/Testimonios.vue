@@ -78,7 +78,7 @@ export default {
   }
   .ui.grid{
     
-    background-color: rgba(9, 126, 126,0.25);
+    background-color:#95dac1;
     .three.wide.column{    
       margin:5%;
       .ui.comments{

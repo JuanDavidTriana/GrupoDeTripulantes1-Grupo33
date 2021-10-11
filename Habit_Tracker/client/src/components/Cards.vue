@@ -77,7 +77,7 @@ export default {
 }
 
 .ui.grid {
-  background-color: #d5bfbf;
+  background-color: #8ca1a5;
 
   .ui.three.cards {
     margin: 2%;

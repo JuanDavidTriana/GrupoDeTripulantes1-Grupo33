@@ -20,13 +20,11 @@
           Iniciar Sesión
         </router-link>
         <router-link class="item" to="/contacto"> Contáctanos </router-link>
-
+        <router-link class="item" to="/aboutus"> Nosotros </router-link>
         <template v-if="token">
           <router-link class="item" to="/orders">Pedidos</router-link>
-          <span class="ui item cart"><i class="shopping cart icon"></i></span>
-          <span class="ui item logout" @click="logout"
-            ><i class="sign-out icon"></i
-          ></span>
+          <span class="ui item cart"><i class="shopping cart icon" @click="openCart"></i></span>
+          <span class="ui item logout" @click="logout"><i class="sign-out icon"></i></span>
         </template>
       </div>
     </div>
@@ -35,6 +33,7 @@
 
 <script>
 import { ref, onMounted } from "vue";
+import { useStore } from "vuex";
 import { getTokenApi, deleteTokenApi } from "../api/token.js";
 import { getCategoriesApi } from "../api/category";
 
@@ -43,13 +42,13 @@ export default {
 
   setup() {
     let categories = ref(null);
+    const token = getTokenApi();
+    const store=useStore();
 
     onMounted(async () => {
       const response = await getCategoriesApi();
       categories.value = response;
     });
-
-    const token = getTokenApi();
 
     const logout = () => {
       console.log("Cerrar sesión");
@@ -57,10 +56,15 @@ export default {
       location.replace("/");
     };
 
+    const openCart=() => {
+      store.commit('steShowCart', true);
+    };
+
     return {
       token,
       logout,
       categories,
+      openCart,
     };
   },
 };
