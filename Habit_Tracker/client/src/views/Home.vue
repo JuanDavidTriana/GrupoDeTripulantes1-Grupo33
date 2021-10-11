@@ -3,13 +3,17 @@
     <Cards />
     <br />
     <br />
+    <div >    
+    
     <div class="ui container">
+      <h1>Calendario</h1>
       <datepicker
         lang="Greg"
         type="range"
         colorTheme="pink"
         v-model="dateGreg"
       />
+    </div>
     </div>
     <br />
     <br />
@@ -74,6 +78,8 @@ export default {
   font-family: 'Comfortaa', cursive;
 }
 .ui.container {
+  text-align: center;
+  color:#512d6d;
   position: center;
 }
 </style>
