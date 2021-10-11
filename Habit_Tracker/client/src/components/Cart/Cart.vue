@@ -1,10 +1,11 @@
 <template>
   <div class="cart-dimmer" :class="{open: showCart}" @click="closeCart" />
   <div class="cart" :class="{open: showCart}">
-      <div>
-        <CartHeader :closeCart="CartHeader" />
-        <CartBody :products="products" :realoadCartFn="realoadCartFn"/>
-      </div>
+    <div>
+      <CartHeader :closeCart="CartHeader" />
+      <CartBody :products="products" :realoadCartFn="realoadCartFn"/>
+    </div>
+    <CartFooter :products="products" :closeCart="closeCart" v-if="products" />
   </div>
 </template>
 
@@ -14,7 +15,8 @@ import {useStore} from "vuex";
 import CartHeader from "./CartHeader.vue";
 import { getProductsCartApi } from "../../api/cart";
 import { getProductsCategory } from '../../api/products';
-import CartBody from "./CartBody.vue"
+import CartBody from "./CartBody.vue";
+import CartFooter from "./CartFooter.vue";
 
 export default {
     name:'Cart',
@@ -22,6 +24,7 @@ export default {
     components:{
       CartHeader,
       CartBody,
+      CartFooter,
     },
   
     setup(){

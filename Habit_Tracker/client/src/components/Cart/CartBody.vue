@@ -48,18 +48,17 @@ export default {
     const increaseProductsCart = (id) => {
     addProductCartApi(id);
     props.realoadCartFn();
+    }
 
     const decreaseProductsCart = (id) => {
     deleteProductCartApi(id);
     props.realoadCartFn();
     };
-    
-    
+        
     return {
       API_URL,
       increaseProductsCart,
-      decreaseProductsCart,
-      
+      decreaseProductsCart,      
     };
   },
 };
