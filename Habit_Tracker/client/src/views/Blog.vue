@@ -45,7 +45,10 @@
     <div class="ui segment">
       <div class="metas">
         <center>
+<<<<<<< HEAD
           <h2 id="metas">¿Cómo crear metas?</h2>
+=======
+>>>>>>> be74eff8a8ea94a36d8c3a3ffb714f15e4454bb5
           <h2 class="ui title">¿Cómo crear metas?</h2>
           <img src="../assets/goal.jpg" alt="metas" />
           <br />
@@ -85,7 +88,11 @@ export default {
 
 <style lang="scss" scoped>
 .ui.title {
+<<<<<<< HEAD
   font-family: "Comfortaa", cursive;
+=======
+  font-family: 'Comfortaa', cursive;
+>>>>>>> be74eff8a8ea94a36d8c3a3ffb714f15e4454bb5
   color: #512d6d;
 }
 .ui.segment {
