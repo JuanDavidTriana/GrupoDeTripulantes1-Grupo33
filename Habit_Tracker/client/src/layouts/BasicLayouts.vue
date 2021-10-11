@@ -4,9 +4,9 @@
     <Menu />
     <div class="ui container">
       <slot />
-    </div>
+    </div>    
   </div>
-
+  
   <Cart />
 </template>
 

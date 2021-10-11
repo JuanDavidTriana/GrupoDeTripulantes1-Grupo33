@@ -3,18 +3,17 @@
   <div class="cart" :class="{open: showCart}">
     <div>
       <CartHeader :closeCart="CartHeader" />
-      <CartBody :products="products" :realoadCartFn="realoadCartFn"/>
+      <CartBody :products="products" :realoadCartFn="realoadCartFn" />
     </div>
     <CartFooter :products="products" :closeCart="closeCart" v-if="products" />
   </div>
 </template>
 
 <script>
-import {ref, computed,watchEffect, watch} from "vue";
+import {ref, computed,watchEffect} from "vue";
 import {useStore} from "vuex";
 import CartHeader from "./CartHeader.vue";
 import { getProductsCartApi } from "../../api/cart";
-import { getProductsCategory } from '../../api/products';
 import CartBody from "./CartBody.vue";
 import CartFooter from "./CartFooter.vue";
 
@@ -30,7 +29,7 @@ export default {
     setup(){
       const store=useStore();
       const showCart=computed(()=>store.state.showCart);
-      let product=ref(null);
+      let products=ref(null);
       let realoadCart=ref(false);
       
       const getProductsCart=async()=>{
@@ -82,7 +81,7 @@ export default {
   top:0;
   width:400px;
   height:100vh;
-  background-color:#ffff;
+  background-color:#fff;
   box-shadow:0px 0px 26px 5px rgba(0,0,0,0.75);
   display:flex;
   flex-direction: column;

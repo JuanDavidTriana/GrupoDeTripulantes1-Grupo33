@@ -26,7 +26,8 @@ export default {
   setup(props){
     const addProductCart=(idProduct) => {
       addProductCartApi(idProduct);
-    }
+    };
+    
     return{
       API_URL,
       addProductCart,

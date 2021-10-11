@@ -21,8 +21,7 @@
         <div
           class="sixten wide mobile eight wide tablet four wide computer column"
           v-for="product in products"
-          :key="product.id"
-        >
+          :key="product.id">
           <Product :product="product" />
         </div>
       </div>

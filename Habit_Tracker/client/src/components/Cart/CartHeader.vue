@@ -22,7 +22,7 @@ export default {
     font-size: 20px;
     border-bottom:1px solid #000;
     padding: 10px 20px;
-    
+    p,
     i{
         margin:0;
     }
@@ -30,5 +30,4 @@ export default {
         cursor:pointer;
     }
 }
-
 </style>
