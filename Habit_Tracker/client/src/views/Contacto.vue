@@ -2,7 +2,7 @@
 	<BasicLayouts>
 		<div>
 			<center>
-				<h2>CONTACTANOS</h2>
+				<h2>CONTÁCTANOS</h2>
 				<br />
 				<form class="ui form" action="#" method="POST">
 					<br />
