@@ -6,6 +6,7 @@ import Contacto from '../views/Contacto.vue';
 import Category from '../views/Category.vue';
 import Blog from '../views/Blog.vue';
 import AboutUs from '../views/AboutUs.vue';
+import Cart from '../views/Cart.vue';
 
 const routes = [
   {
@@ -14,32 +15,37 @@ const routes = [
     component: Home,
   },
   {
-    path: '/Login',
+    path: '/login',
     name: 'Login',
     component: Login,
   },
   {
-    path: '/Register',
+    path: '/register',
     name: 'Register',
     component: Register,
   },
   {
-    path: '/Contacto',
+    path: '/cart',
+    name: 'Cart',
+    component: Cart,
+  },
+  {
+    path: '/contacto',
     name: 'Contacto',
     component: Contacto,
   },
   {
-    path: '/Blog',
+    path: '/blog',
     name: 'Blog',
     component: Blog,
   },
   {
-    path: '/AboutUs',
+    path: '/aboutUs',
     name: 'AboutUs',
     component: AboutUs,
   },
   {
-    path: '/:Category',
+    path: '/:category',
     component: Category,
   },
 ];
