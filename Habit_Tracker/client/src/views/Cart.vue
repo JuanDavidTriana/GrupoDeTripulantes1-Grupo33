@@ -47,6 +47,12 @@ export default {
   setup() {
     let products = ref(null);
     let realodCart = ref(false);
+
+    watchEffect(async () => {
+      realodCart.value;
+      const response = await getProductsCartApi();
+      products.value = response;
+    });
     
     const getTotal = () => {
       let totalTemp = 0;
@@ -56,9 +62,15 @@ export default {
       return totalTemp.toFixed(2);
     };
     
+    const deleteAllProductCart = (idProduct) => {
+      deleteAllProductCartApi(idProduct);
+      realodCart.value = !realodCart.value;
+    };
+
     return {
       products,
       getTotal,
+      deleteAllProductCart,
       
     };
   },
