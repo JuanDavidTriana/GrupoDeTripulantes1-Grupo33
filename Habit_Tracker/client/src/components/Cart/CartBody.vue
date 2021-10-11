@@ -48,7 +48,7 @@ export default {
     const increaseProductsCart = (id) => {
     addProductCartApi(id);
     props.realoadCartFn();
-    }
+    };
 
     const decreaseProductsCart = (id) => {
     deleteProductCartApi(id);

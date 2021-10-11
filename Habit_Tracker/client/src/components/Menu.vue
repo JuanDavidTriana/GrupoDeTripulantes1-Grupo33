@@ -32,10 +32,10 @@
 </template>
 
 <script>
-import { ref, onMounted } from "vue";
-import { useStore } from "vuex";
-import { getTokenApi, deleteTokenApi } from "../api/token.js";
-import { getCategoriesApi } from "../api/category";
+import { ref, onMounted } from 'vue';
+import { useStore } from 'vuex';
+import { getTokenApi, deleteTokenApi } from '../api/token.js';
+import { getCategoriesApi } from '../api/category';
 
 export default {
   name: "menu",
@@ -56,8 +56,8 @@ export default {
       location.replace("/");
     };
 
-    const openCart=() => {
-      store.commit('steShowCart', true);
+    const openCart = () => {
+      store.commit('setShowCart', true);
     };
 
     return {

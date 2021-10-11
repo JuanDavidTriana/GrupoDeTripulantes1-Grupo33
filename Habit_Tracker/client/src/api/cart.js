@@ -55,8 +55,8 @@ export async function getProductsCartApi() {
     
       localStorage.setItem(PRODUCTS, JSON.stringify(products));
     }
-
-    export function deleteAllProductCartApi(idProduct) {
+    
+   export function deleteAllProductCartApi(idProduct) {
       const products = getCartApi();
     
       const index = products.indexOf(idProduct);
@@ -67,3 +67,4 @@ export async function getProductsCartApi() {
         deleteAllProductCartApi(idProduct);
       }
     }
+    

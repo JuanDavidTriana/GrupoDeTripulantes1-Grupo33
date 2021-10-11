@@ -38,23 +38,23 @@ export default {
 
 <style lang="scss" scoped>
 .product{
-    &:hover{
-        .ui.button{
-            min-height:36px;
-        }
-    }
+  &:hover{
     .ui.button{
-        max-height:0;
-        min-height: 0;
-        overflow:hidden;
-        padding:0;
-        display:flex;
-        align-items:center;
-        justify-content: center;
-        transition:min-height 0.6s ease;
+      min-height:36px;
     }
-* {
-  font-family: "Comfortaa", cursive;
+  }
+  .ui.button{
+      max-height:0;
+      min-height: 0;
+      overflow:hidden;
+      padding:0;
+      display:flex;
+      align-items:center;
+      justify-content: center;
+      transition:min-height 0.6s ease;
+  }
+  *{
+    font-family: "Comfortaa", cursive;
   }
 }
 </style>
