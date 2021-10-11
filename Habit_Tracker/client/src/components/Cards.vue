@@ -34,7 +34,9 @@
             <h2 class="ui header">¿Cómo crear hábitos?</h2>
             <br />
           </div>
-          <button class="ui inverted violet button">Ver</button>
+          <router-link to="/Blog">
+            <button class="ui inverted violet button">Ver</button>
+          </router-link>
         </div>
       </div>
 
@@ -47,7 +49,9 @@
             <h2 class="ui header">¿Cómo establecer Metas?</h2>
             <br />
           </div>
-          <button class="ui inverted violet button">Ver</button>
+          <router-link to="/Blog">
+            <button class="ui inverted violet button">Ver</button>
+          </router-link>
         </div>
       </div>
     </div>

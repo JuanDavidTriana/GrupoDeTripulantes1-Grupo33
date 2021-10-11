@@ -35,7 +35,7 @@
     </div>
     <div class="metas">
       <center>
-        <h2>¿Cómo crear metas?</h2>
+        <h2 id="metas">¿Cómo crear metas?</h2>
         <img src="../assets/goal.jpg" alt="metas" />
         <p>
           La mayoría de las personas tiene objetivos. Ya sea personales o de
